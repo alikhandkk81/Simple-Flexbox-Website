@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    height: 100px;
+    background: #FaFaFA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo h1{
+    text-transform: uppercase;
+    color: skyblue;
+    font-weight: 700;
+}
+.logo h1 span{
+    color: #133B4F;
+    font-size: 20px;
+    font-weight: 500;
+    font-family:monospace;
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #3a3a3a;
+    display: block;
+}
+ul li a::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0;
+    background: skyblue;
+    transition: all .5s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+main{
+    display: flex;
+    height: calc(100vh - 100px);
+    align-items: center;
+    justify-content: center;
+}
+.hero-img{
+    max-width: 670px;
+    height: auto;
+}
+.content-left{
+    width: 30%;
+}
+main h1{
+    font-size: 54px;
+    color: #133B4F;
+    text-transform: uppercase;
+}
+main h2{
+    font-size: 25px;
+    color: #FCA70C;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+main p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 31.5px;
+    margin: 30px 0;
+}
+.cta{
+    background: skyblue;
+    padding: 15px 30px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+.signup-btn{
+    background: skyblue;
+    padding: 10px 20px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
